@@ -54,11 +54,11 @@ of flows more efficiently and accurately using the selected features.
 
 Used Environment
 ------------------------
-Mininet Emulator
-POX OpenFlow controller 
-Wireshark
-Iperf1
-python for data processing
-Bash scripting for scenarios and GNU plot
-WEKA machine learning tool to train and test different decision tree algorithms
-Customized Linux Kernel
+# Mininet Emulator
+# POX OpenFlow controller 
+# Wireshark
+# Iperf1
+# python for data processing
+# Bash scripting for scenarios and GNU plot
+# WEKA machine learning tool to train and test different decision tree algorithms
+# Customized Linux Kernel
