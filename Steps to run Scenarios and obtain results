@@ -1,0 +1,156 @@
+
+
+	1........ Strat POX controller first
+
+	-- Set directory to the POX controller installation folder
+		
+		cd pox  
+			
+	-- In order to run POX controller with modified l2_learning switch
+
+		./pox.py forwarding.alam_l2_learning_monitor 
+
+	-- If any massage come up like post is already used by another controller then in order to 
+	clean the port
+		
+		sudo fuser -k 6633/tcp
+
+	
+	2......... In another terminal, go to the scenario directory
+
+		eg. cd Desktop/alam_experiments/A_60ms-20mbps-q100/1-flow_monitor
+
+	-- Now run the scenario
+
+		-- python 1-topo-2host-4switches.py
+
+		inside this script -- 
+
+			** Link Delay, Band Width, Interface Queue size can be modified
+
+
+		-- output files are --
+
+			** h4.PCAP & h1.PCAP -- capture tcpdump in order to analyse in wireshark
+
+			** iperf3h1.txt -- per unit time Bandwidth
+
+			** switch1_monitor & switch4_monitor -- packets information obtain from switches
+
+
+	3. Now stop everything
+
+		strg + c - in POX controller terminal and h1 , h4 terminal
+
+		strg + D - in mininet terminal
+		
+		-- mn -c - to clear everything in Mininet
+
+	  copy syslog file into current directory if necessary
+
+		cp /var/log/syslog .
+
+
+
+	4. In order to calculate DeliveryDelay and InterArrivalTime
+
+		python 2-monitor_OWD_IAT.py
+
+
+		-- output files --
+
+		** FilterS1.txt & FilterS4.txt -- shows individual packet msg in a single line
+
+		** S1Data.txt & S4Data.txt -- shows Timestamps, Checksum and IAT 
+
+		** s1_iat.txt & s4_iat.txt -- time and IAT
+
+		** delay_time_csum.txt -- $1 - IAT
+					$2 - Timestamp of S1
+					$3 - Timestamp of S4
+					$4 - checksum S1
+					$5 - checksum S4
+
+		** owd-new -- 	$1 - Time at s1 (sec.ms) 
+				$2 - OneWayDelay(s1 to s4)
+				$3 - special***** acumilative packet processing time columns in order to make scale for X-axis
+
+		** s4_iat-new -- $1 - Time at s4 (sec.ms) 
+				$2 - InterArrivalTime at s4
+				$3 - Time at s1 (sec.ms)
+				$4 - InterArrivalTime at s1
+
+
+	5. Select training samples, create attributes and draw plot
+		
+		**** in this file, Some pre-processing needed in order to remove irrelevant of miss calculated 
+			OWD and IAT
+
+		python 3-processing_samples_train.py
+
+
+		-- output files -- 
+
+		** owd-results -- OWD training instances (including attributes) along with class
+
+		** iat-results -- IAT training instances (including attributes) along with class
+
+		** OWD and IAT figures 
+
+
+	6. In order to combine and create training file formate (.arff) for WEKA
+
+		python 4-combine-to-arff.py
+
+		-- output file --
+		
+		** all_Offline_I.arff -- training or input data formate for weka
+
+
+	7. Select test samples, create attributes and draw plot
+
+		python 5-processing_samples_test.py
+
+
+		-- output files --
+
+		** owd-results_test -- OWD test instances (including attributes) along with class
+
+		** iat-results_test -- IAT test instances (including attributes) along with class
+
+		** OWD and IAT figures 
+
+
+	10. In order to combine and create test file formate (.arff) for WEKA
+
+		python 6-combine-to-arff_test.py
+	
+
+		-- output file --
+
+		** all__Test_Offline_I.arff -- test data
+
+
+	Now, Dataset of 1-flow scenario is complete. need follow the same procedure for 15 flows scenarios.
+		Then combine them all together and further process it to WEKA 
+
+	
+	The command to combine 2 arff file is -- 
+
+		-- java weka.core.Instances append filename1 filename2 > output-file 
+
+	In order to combine all scnarios together, this script can be used. (keep in mind the directory of WEKA and
+		all the train and test file need to put in the same folder inpluding the pytrhon script)
+
+	-- python combine.py
+
+	
+
+
+	############# Only the source fine of this thesis is uploaded to GitHub (Due to space limitation)
+	How ever a comple scenarios (flow 1 to 15) including results is uploaded in Google drive and can be 
+	download via this link
+
+	-- https://drive.google.com/open?id=1uRRXex9FdCWDd9UfYeIUV_vlOfiMxcql
+	
+		
