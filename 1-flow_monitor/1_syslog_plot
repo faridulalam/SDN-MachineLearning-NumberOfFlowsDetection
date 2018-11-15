@@ -1,0 +1,75 @@
+#!/bin/bash
+#set terminal tex
+#set terminal pngcairo size 1280,960
+set terminal pngcairo size 1024,768
+#set terminal eps
+#set terminal svg
+
+
+#set terminal png font ",8"
+set output "1-Flow_RTT-60ms_BW-20Mbps_Queue-200.png"
+#set output "2_cap_100-100_del_10-20-10-20.eps" 
+#set output "2_cap_100-100_del_10-20-10-20.svg" 
+#set output "2_cap_100-100_del_10-20-10-20.tex"
+
+set key reverse right top font ",14" 
+set key spacing 0.8
+#set key width-4.5
+#set key height 0.5
+
+set multiplot layout 3,1 title "1-Flow_RTT-60ms_BW-20Mbps_Queue-200" font "Arial-Bold,20"
+set xlabel "Time (sec) " font ",12" 
+set xrange [0:3]
+set grid
+
+#set termoption dash
+
+offset_D_X=15758741.753567
+offset_D_Y=0
+
+offset_RTT_NEW_X=15758741.753574
+offset_RTT_NEW_Y=0
+
+offset_B_X=15758741.753578
+offset_B_Y=0
+
+#offset_D=548.4
+
+mul=1
+
+
+################# One Way Delay #######################
+
+#set key reverse right top font ",4"
+#set key spacing 0.8
+set xrange [0:220]
+set yrange [0:420]
+set ylabel "One Way Delay (ms)" font ",14" 
+plot "fw_delay_new_11_cong" using (($1-offset_D_X)*mul):(($2-offset_D_Y)) title "One Way Delay"  with lines lt rgb "red"
+#, "fw_delay_new_22_cong" using (($1-offset_D_X)*mul):(($2-offset_D_Y)) title "Subflow 2" with lines lt rgb "blue"
+unset ylabel
+unset title
+
+############### Backward Delay ######################
+
+set xrange [0:220]
+set yrange [0:420]
+set ylabel "Backward Delay (ms)" font ",14"
+plot "bw_delay_new_11_cong" using (($1-offset_B_X)*mul):(($2-offset_B_Y)) title "Backward Delay"  with lines lt rgb "red"
+#, "bw_delay_new_22_cong" using (($1-offset_B_X)*mul):(($2-offset_B_Y)) title "Subflow 2"  with lines lt rgb "red" 
+unset ylabel
+unset title 
+
+################ SRTT_new ########################
+set xrange [0:220]
+set yrange [0:420]
+set ylabel "Round Trip Time (ms)" font ",14"
+plot "srtt_f_new_11_cong" using (($1-offset_RTT_NEW_X)*mul):(($2-offset_RTT_NEW_Y)) title "Round Trip Time"  with lines lt rgb "red"
+#, "srtt_f_new_22_cong" using (($1-offset_RTT_NEW_X)*mul):(($2-21)) title "Subflow 2" with lines lt rgb "blue"
+unset ylabel
+unset title 
+
+
+unset multiplot
+
+

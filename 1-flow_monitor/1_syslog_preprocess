@@ -1,0 +1,69 @@
+#!/bin/bash
+
+
+SF1=f322c780
+#SF2=f3a91600
+
+
+
+######## One Way Delay ##############
+
+#grep -rZ -E "tcp_cong" /home/lab/new-analysis/new-d-delay---1 > mptcp_fw_delay_1
+grep -rZ -E "fw_delay" /home/faridul/Desktop/alam_experiments/60ms-20mbps-q200/1-flow_monitor/syslog > mptcp_fw_delay_cong
+
+#rm mptcp_fw_delay_1
+
+# for subflow 1
+
+grep -rZ -E "$SF1" mptcp_fw_delay_cong > fw_delay_sf1
+awk '{print $6, $11}' fw_delay_sf1 > fw_delay_sf1_new
+sed 's/]//' fw_delay_sf1_new > fw_delay_new_11_cong_1
+sed 's/.//' fw_delay_new_11_cong_1 > fw_delay_new_11_cong
+head -n -5 fw_delay_new_11_cong > fw_delay_new_1
+rm fw_delay_sf1
+rm fw_delay_sf1_new
+rm fw_delay_new_11_cong_1
+rm fw_delay_new_1
+
+######## Backward Delay ##############
+
+#grep -rZ -E "tcp_cong" /home/lab/new-analysis/new-d-delay---1 > mptcp_bw_delay_1
+grep -rZ -E "bw_delay" /home/faridul/Desktop/alam_experiments/60ms-20mbps-q200/1-flow_monitor/syslog > mptcp_bw_delay_cong
+
+#rm mptcp_fw_delay_1
+
+# for subflow 1
+
+grep -rZ -E "$SF1" mptcp_bw_delay_cong > bw_delay_sf1
+awk '{print $6, $11}' bw_delay_sf1 > bw_delay_sf1_new
+sed 's/]//' bw_delay_sf1_new > bw_delay_new_11_cong_1
+sed 's/.//' bw_delay_new_11_cong_1 > bw_delay_new_11_cong
+head -n -5 bw_delay_new_11_cong > bw_delay_new_1
+rm bw_delay_sf1
+rm bw_delay_sf1_new
+rm bw_delay_new_11_cong_1
+rm bw_delay_new_1   
+
+######## SRTT_new Delay ##############
+
+#grep -rZ -E "tcp_cong" /home/lab/new-analysis/new-d-delay---1 > mptcp_fw_delay_1
+grep -rZ -E " srtt_f " /home/faridul/Desktop/alam_experiments/60ms-20mbps-q200/1-flow_monitor/syslog > mptcp_srtt_f_cong
+
+#rm mptcp_fw_delay_1
+
+# for subflow 1
+
+grep -rZ -E "$SF1" mptcp_srtt_f_cong > srtt_f_sf1
+awk '{print $6, $11}' srtt_f_sf1 > srtt_f_sf1_new
+sed 's/]//' srtt_f_sf1_new > srtt_f_new_11_cong_1
+sed 's/.//' srtt_f_new_11_cong_1 > srtt_f_new_11_cong
+head -n -5 srtt_f_new_11_cong > srtt_f_new_1
+rm srtt_f_sf1
+rm srtt_f_sf1_new
+rm srtt_f_new_11_cong_1
+rm srtt_f_new_1
+
+rm mptcp_fw_delay_cong
+rm mptcp_bw_delay_cong
+rm mptcp_srtt_f_cong
+rm mptcp_rtt
