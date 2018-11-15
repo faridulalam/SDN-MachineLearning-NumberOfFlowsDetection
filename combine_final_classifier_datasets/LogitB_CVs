@@ -1,0 +1,1790 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.LogitBoost -P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     ms-mbps-Q-weka.filters.unsupervised.instance.ReservoirSample-S1-Z63000-weka.filters.unsupervised.instance.Randomize-S42
+Instances:    63000
+Attributes:   63
+              avgw3delay_div_avgw1delay
+              avgw3delay_div_minw1delay
+              avgw3delay_div_maxw1delay
+              avgw3delay_div_avgw2delay
+              avgw3delay_div_minw2delay
+              avgw3delay_div_maxw2delay
+              minw3delay_div_avgw1delay
+              minw3delay_div_minw1delay
+              minw3delay_div_maxw1delay
+              minw3delay_div_avgw2delay
+              minw3delay_div_minw2delay
+              minw3delay_div_maxw2delay
+              maxw3delay_div_avgw1delay
+              maxw3delay_div_minw1delay
+              maxw3delay_div_maxw1delay
+              maxw3delay_div_avgw2delay
+              maxw3delay_div_minw2delay
+              maxw3delay_div_maxw2delay
+              minw3delay_div_maxw3delay
+              stdw3delay_div_stdw1delay
+              stdw3delay_div_stdw2delay
+              stdw1delay_div_stdw2delay
+              avgw1delay_div_avgw2delay
+              avgw1delay_div_minw2delay
+              avgw1delay_div_maxw2delay
+              minw1delay_div_avgw2delay
+              minw1delay_div_minw2delay
+              minw1delay_div_maxw2delay
+              maxw1delay_div_avgw2delay
+              maxw1delay_div_minw2delay
+              maxw1delay_div_maxw2delay
+              avgw3iat_div_avgw1iat
+              avgw3iat_div_minw1iat
+              avgw3iat_div_maxw1iat
+              avgw3iat_div_avgw2iat
+              avgw3iat_div_minw2iat
+              avgw3iat_div_maxw2iat
+              minw3iat_div_avgw1iat
+              minw3iat_div_minw1iat
+              minw3iat_div_maxw1iat
+              minw3iat_div_avgw2iat
+              minw3iat_div_minw2iat
+              minw3iat_div_maxw2iat
+              maxw3iat_div_avgw1iat
+              maxw3iat_div_minw1iat
+              maxw3iat_div_maxw1iat
+              maxw3iat_div_avgw2iat
+              maxw3iat_div_minw2iat
+              maxw3iat_div_maxw2iat
+              minw3iat_div_maxw3iat
+              stdw3iat_div_stdw1iat
+              stdw3iat_div_stdw2iat
+              stdw1iat_div_stdw2iat
+              avgw1iat_div_avgw2iat
+              avgw1iat_div_minw2iat
+              avgw1iat_div_maxw2iat
+              minw1iat_div_avgw2iat
+              minw1iat_div_minw2iat
+              minw1iat_div_maxw2iat
+              maxw1iat_div_avgw2iat
+              maxw1iat_div_minw2iat
+              maxw1iat_div_maxw2iat
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LogitBoost: Base classifiers and their weights: 
+
+Iteration 1
+	Class 1 (class=I)
+
+Decision Stump
+
+Classifications
+
+minw1delay_div_maxw2delay <= 0.7962065 : -0.9286085487849767
+minw1delay_div_maxw2delay > 0.7962065 : 1.924700642647195
+minw1delay_div_maxw2delay is missing : -0.0034266578749676396
+
+
+	Class 2 (class=II)
+
+Decision Stump
+
+Classifications
+
+avgw3delay_div_maxw2delay <= 0.9635255 : -0.6160867473372778
+avgw3delay_div_maxw2delay > 0.9635255 : 2.2806784255850148
+avgw3delay_div_maxw2delay is missing : -0.010095118449055668
+
+
+	Class 3 (class=III)
+
+Decision Stump
+
+Classifications
+
+avgw1delay_div_minw2delay <= 0.9802865000000001 : 1.9058572250064034
+avgw1delay_div_minw2delay > 0.9802865000000001 : -0.4555050611664191
+avgw1delay_div_minw2delay is missing : 0.00683582580376309
+
+
+	Class 4 (class=IV)
+
+Decision Stump
+
+Classifications
+
+maxw3iat_div_avgw2iat <= 10.645186500000001 : -0.7852552008648813
+maxw3iat_div_avgw2iat > 10.645186500000001 : 0.5956326192448408
+maxw3iat_div_avgw2iat is missing : 0.007036527395725363
+
+
+	Class 5 (class=V)
+
+Decision Stump
+
+Classifications
+
+avgw1iat_div_maxw2iat <= 0.105268 : 0.44409153952851754
+avgw1iat_div_maxw2iat > 0.105268 : -0.8273277382474302
+avgw1iat_div_maxw2iat is missing : -0.005647023391248527
+
+
+	Class 6 (class=VI)
+
+Decision Stump
+
+Classifications
+
+maxw3iat_div_avgw2iat <= 8.7948405 : -0.6357668067224611
+maxw3iat_div_avgw2iat > 8.7948405 : 0.31214333269934813
+maxw3iat_div_avgw2iat is missing : 0.005631194313881576
+
+
+	Class 7 (class=VII)
+
+Decision Stump
+
+Classifications
+
+minw3delay_div_maxw2delay <= 0.8469040000000001 : 0.4974431591833503
+minw3delay_div_maxw2delay > 0.8469040000000001 : -0.4569754436810101
+minw3delay_div_maxw2delay is missing : 0.013248329907513842
+
+
+	Class 8 (class=VIII)
+
+Decision Stump
+
+Classifications
+
+maxw1delay_div_minw2delay <= 1.367368 : -0.8661755518532719
+maxw1delay_div_minw2delay > 1.367368 : 0.2160357052417061
+maxw1delay_div_minw2delay is missing : -0.007667666303054866
+
+
+	Class 9 (class=IX)
+
+Decision Stump
+
+Classifications
+
+minw3delay_div_maxw3delay <= 0.760374 : 0.22246709855568542
+minw3delay_div_maxw3delay > 0.760374 : -0.918146451653722
+minw3delay_div_maxw3delay is missing : -0.005647023391086785
+
+
+	Class 10 (class=X)
+
+Decision Stump
+
+Classifications
+
+minw3iat_div_maxw1iat <= 0.911438 : 0.8569985986313312
+minw3iat_div_maxw1iat > 0.911438 : -0.2988307333499398
+minw3iat_div_maxw1iat is missing : 0.002214138999576686
+
+
+	Class 11 (class=XI)
+
+Decision Stump
+
+Classifications
+
+minw3iat_div_maxw2iat <= 0.153215 : -0.3465194363005164
+minw3iat_div_maxw2iat > 0.153215 : 1.3681248810550735
+minw3iat_div_maxw2iat is missing : 0.007638511678376018
+
+
+	Class 12 (class=XII)
+
+Decision Stump
+
+Classifications
+
+avgw1iat_div_maxw2iat <= 0.151536 : -0.5568027210875047
+avgw1iat_div_maxw2iat > 0.151536 : 1.673228768826714
+avgw1iat_div_maxw2iat is missing : 0.0012080147753293518
+
+
+	Class 13 (class=XIII)
+
+Decision Stump
+
+Classifications
+
+minw3delay_div_maxw3delay <= 0.715482 : 0.2363064365881226
+minw3delay_div_maxw3delay > 0.715482 : -0.7879522566199724
+minw3delay_div_maxw3delay is missing : -0.015364654465929132
+
+
+	Class 14 (class=XIV)
+
+Decision Stump
+
+Classifications
+
+minw3delay_div_avgw1delay <= 1.184355 : 0.3630198915008399
+minw3delay_div_avgw1delay > 1.184355 : -0.514856422332915
+minw3delay_div_avgw1delay is missing : 0.005832016474427546
+
+
+	Class 15 (class=XV)
+
+Decision Stump
+
+Classifications
+
+minw3delay_div_maxw3delay <= 0.725233 : 0.24997202718964606
+minw3delay_div_maxw3delay > 0.725233 : -0.8378436891099069
+minw3delay_div_maxw3delay is missing : -0.0020149734919640548
+
+
+Iteration 2
+	Class 1 (class=I)
+
+Decision Stump
+
+Classifications
+
+avgw3delay_div_maxw2delay <= 0.853076 : -0.9771271976001514
+avgw3delay_div_maxw2delay > 0.853076 : 1.2258900393354157
+avgw3delay_div_maxw2delay is missing : -0.13440542473430686
+
+
+	Class 2 (class=II)
+
+Decision Stump
+
+Classifications
+
+minw1delay_div_maxw2delay <= 0.7791455 : -0.7348291603562999
+minw1delay_div_maxw2delay > 0.7791455 : 1.7066005192332192
+minw1delay_div_maxw2delay is missing : 0.03183120715190288
+
+
+	Class 3 (class=III)
+
+Decision Stump
+
+Classifications
+
+minw1delay_div_maxw2delay <= 0.6806315000000001 : -0.6915306866535538
+minw1delay_div_maxw2delay > 0.6806315000000001 : 0.9407184794330014
+minw1delay_div_maxw2delay is missing : 0.026470914612801478
+
+
+	Class 4 (class=IV)
+
+Decision Stump
+
+Classifications
+
+avgw1delay_div_minw2delay <= 0.9572765000000001 : 1.6203390226419014
+avgw1delay_div_minw2delay > 0.9572765000000001 : -0.22542236548322891
+avgw1delay_div_minw2delay is missing : 0.008946551453300686
+
+
+	Class 5 (class=V)
+
+Decision Stump
+
+Classifications
+
+avgw3iat_div_maxw1iat <= 0.10629949999999999 : 0.31773373174446184
+avgw3iat_div_maxw1iat > 0.10629949999999999 : -0.707467915490458
+avgw3iat_div_maxw1iat is missing : 0.006572773749761018
+
+
+	Class 6 (class=VI)
+
+Decision Stump
+
+Classifications
+
+minw3delay_div_maxw3delay <= 0.788675 : 0.21559465686718943
+minw3delay_div_maxw3delay > 0.788675 : -0.8166142406114444
+minw3delay_div_maxw3delay is missing : 0.03325833232409499
+
+
+	Class 7 (class=VII)
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_avgw2delay <= 1.1823555 : -0.40117923092385244
+maxw3delay_div_avgw2delay > 1.1823555 : 0.4364198309766058
+maxw3delay_div_avgw2delay is missing : 0.017117958564107985
+
+
+	Class 8 (class=VIII)
+
+Decision Stump
+
+Classifications
+
+minw3iat_div_maxw1iat <= 0.798305 : 1.1122396797735468
+minw3iat_div_maxw1iat > 0.798305 : -0.20405432485154024
+minw3iat_div_maxw1iat is missing : -0.008588408124724242
+
+
+	Class 9 (class=IX)
+
+Decision Stump
+
+Classifications
+
+maxw1delay_div_maxw2delay <= 0.9836735 : -0.6097000118749548
+maxw1delay_div_maxw2delay > 0.9836735 : 0.13963444986889384
+maxw1delay_div_maxw2delay is missing : 0.0022419047842939534
+
+
+	Class 10 (class=X)
+
+Decision Stump
+
+Classifications
+
+minw3iat_div_maxw1iat <= 1.0723 : -0.2610982778968825
+minw3iat_div_maxw1iat > 1.0723 : 0.9454906900456105
+minw3iat_div_maxw1iat is missing : 0.017326826522893926
+
+
+	Class 11 (class=XI)
+
+Decision Stump
+
+Classifications
+
+minw3iat_div_avgw1iat <= 6.522112 : 0.8731766270214162
+minw3iat_div_avgw1iat > 6.522112 : -0.30663541596040644
+minw3iat_div_avgw1iat is missing : -1.3478618996276895E-4
+
+
+	Class 12 (class=XII)
+
+Decision Stump
+
+Classifications
+
+avgw3iat_div_maxw1iat <= 0.15221099999999999 : -0.5440011861848151
+avgw3iat_div_maxw1iat > 0.15221099999999999 : 1.188407975029032
+avgw3iat_div_maxw1iat is missing : -0.05097147112600375
+
+
+	Class 13 (class=XIII)
+
+Decision Stump
+
+Classifications
+
+avgw1iat_div_maxw2iat <= 0.111211 : -0.3062940738125856
+avgw1iat_div_maxw2iat > 0.111211 : 0.35807372706787893
+avgw1iat_div_maxw2iat is missing : 0.003501466120844837
+
+
+	Class 14 (class=XIV)
+
+Decision Stump
+
+Classifications
+
+avgw3delay_div_minw1delay <= 1.2052405 : -0.7773613966888236
+avgw3delay_div_minw1delay > 1.2052405 : 0.2968687126068877
+avgw3delay_div_minw1delay is missing : 0.02064259390186163
+
+
+	Class 15 (class=XV)
+
+Decision Stump
+
+Classifications
+
+minw3delay_div_maxw1delay <= 0.9781365 : 0.8581112997299439
+minw3delay_div_maxw1delay > 0.9781365 : -0.18433889587055763
+minw3delay_div_maxw1delay is missing : 0.003495147829120559
+
+
+Iteration 3
+	Class 1 (class=I)
+
+Decision Stump
+
+Classifications
+
+avgw1iat_div_maxw2iat <= 0.0999785 : -0.8699618383462075
+avgw1iat_div_maxw2iat > 0.0999785 : 0.9765385703474132
+avgw1iat_div_maxw2iat is missing : -0.018458441031698577
+
+
+	Class 2 (class=II)
+
+Decision Stump
+
+Classifications
+
+avgw3iat_div_maxw1iat <= 0.0748785 : 0.8110921758203656
+avgw3iat_div_maxw1iat > 0.0748785 : -0.8457454963910065
+avgw3iat_div_maxw1iat is missing : 0.026660615931260498
+
+
+	Class 3 (class=III)
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_avgw1delay <= 1.0217785 : -0.3790779403229878
+maxw3delay_div_avgw1delay > 1.0217785 : 1.3485773955534723
+maxw3delay_div_avgw1delay is missing : 0.02663460009453732
+
+
+	Class 4 (class=IV)
+
+Decision Stump
+
+Classifications
+
+minw3delay_div_maxw1delay <= 0.9673465 : 1.1746044124627828
+minw3delay_div_maxw1delay > 0.9673465 : -0.379645449914652
+minw3delay_div_maxw1delay is missing : -0.004785805754551844
+
+
+	Class 5 (class=V)
+
+Decision Stump
+
+Classifications
+
+maxw3iat_div_avgw2iat <= 9.257642 : -0.680653877970387
+maxw3iat_div_avgw2iat > 9.257642 : 0.16921477388892003
+maxw3iat_div_avgw2iat is missing : -0.01096663307132973
+
+
+	Class 6 (class=VI)
+
+Decision Stump
+
+Classifications
+
+minw3iat_div_maxw2iat <= 0.113928 : 0.20580623156014988
+minw3iat_div_maxw2iat > 0.113928 : -0.569529013339438
+minw3iat_div_maxw2iat is missing : -0.016187779228972368
+
+
+	Class 7 (class=VII)
+
+Decision Stump
+
+Classifications
+
+avgw1delay_div_maxw2delay <= 0.8386830000000001 : 0.29549350577063194
+avgw1delay_div_maxw2delay > 0.8386830000000001 : -0.33215600781955046
+avgw1delay_div_maxw2delay is missing : -0.018779210836506972
+
+
+	Class 8 (class=VIII)
+
+Decision Stump
+
+Classifications
+
+minw3iat_div_maxw1iat <= 1.0631650000000001 : -0.3148188250985602
+minw3iat_div_maxw1iat > 1.0631650000000001 : 0.9935999740600324
+minw3iat_div_maxw1iat is missing : -0.01797964048927846
+
+
+	Class 9 (class=IX)
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_minw2delay <= 1.6573385 : -0.2423601621772108
+maxw3delay_div_minw2delay > 1.6573385 : 0.24395678084729266
+maxw3delay_div_minw2delay is missing : -0.011500292292957067
+
+
+	Class 10 (class=X)
+
+Decision Stump
+
+Classifications
+
+minw3delay_div_maxw3delay <= 0.712917 : 0.31154321871847274
+minw3delay_div_maxw3delay > 0.712917 : -0.7459363876772043
+minw3delay_div_maxw3delay is missing : 0.0354467381786613
+
+
+	Class 11 (class=XI)
+
+Decision Stump
+
+Classifications
+
+maxw1iat_div_maxw2iat <= 1.0289915 : 0.24932692983626917
+maxw1iat_div_maxw2iat > 1.0289915 : -0.7666602669968781
+maxw1iat_div_maxw2iat is missing : 0.07562872357584997
+
+
+	Class 12 (class=XII)
+
+Decision Stump
+
+Classifications
+
+maxw3iat_div_avgw2iat <= 6.569674 : 0.5394104515267965
+maxw3iat_div_avgw2iat > 6.569674 : -0.3431942768256836
+maxw3iat_div_avgw2iat is missing : -0.02896352235747908
+
+
+	Class 13 (class=XIII)
+
+Decision Stump
+
+Classifications
+
+avgw3delay_div_maxw1delay <= 0.8351175 : -0.38198450045429627
+avgw3delay_div_maxw1delay > 0.8351175 : 0.19825196731454053
+avgw3delay_div_maxw1delay is missing : -0.001409050565497872
+
+
+	Class 14 (class=XIV)
+
+Decision Stump
+
+Classifications
+
+maxw1delay_div_avgw2delay <= 1.1713955 : 0.46489214259377926
+maxw1delay_div_avgw2delay > 1.1713955 : -0.49325758734336617
+maxw1delay_div_avgw2delay is missing : -0.012754744866025656
+
+
+	Class 15 (class=XV)
+
+Decision Stump
+
+Classifications
+
+avgw1iat_div_maxw2iat <= 0.1157735 : -0.38501769975355976
+avgw1iat_div_maxw2iat > 0.1157735 : 0.5391125955718402
+avgw1iat_div_maxw2iat is missing : -0.014691880922549631
+
+
+Iteration 4
+	Class 1 (class=I)
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_minw2delay <= 1.2654655 : 0.680871255825042
+maxw3delay_div_minw2delay > 1.2654655 : -0.8642712720970278
+maxw3delay_div_minw2delay is missing : -0.1406897434248819
+
+
+	Class 2 (class=II)
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_minw2delay <= 1.440238 : 0.46746120847237865
+maxw3delay_div_minw2delay > 1.440238 : -0.8850658337110858
+maxw3delay_div_minw2delay is missing : -0.06954070833177294
+
+
+	Class 3 (class=III)
+
+Decision Stump
+
+Classifications
+
+minw3delay_div_maxw1delay <= 0.8686365 : 1.3767677294416376
+minw3delay_div_maxw1delay > 0.8686365 : -0.30068719347531514
+minw3delay_div_maxw1delay is missing : 0.01396514287593327
+
+
+	Class 4 (class=IV)
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_avgw1delay <= 1.0739185 : -0.17080281257960156
+maxw3delay_div_avgw1delay > 1.0739185 : 1.5522279356660666
+maxw3delay_div_avgw1delay is missing : 0.018098250563909936
+
+
+	Class 5 (class=V)
+
+Decision Stump
+
+Classifications
+
+avgw1delay_div_avgw2delay <= 0.851486 : 0.8974051114307176
+avgw1delay_div_avgw2delay > 0.851486 : -0.11638323437980898
+avgw1delay_div_avgw2delay is missing : 0.010836253731425898
+
+
+	Class 6 (class=VI)
+
+Decision Stump
+
+Classifications
+
+maxw1delay_div_minw2delay <= 1.1616905 : -0.7469071742086308
+maxw1delay_div_minw2delay > 1.1616905 : 0.07390797017464239
+maxw1delay_div_minw2delay is missing : -0.004261068971788948
+
+
+	Class 7 (class=VII)
+
+Decision Stump
+
+Classifications
+
+maxw1delay_div_maxw2delay <= 0.9917695 : -0.5050181698098695
+maxw1delay_div_maxw2delay > 0.9917695 : 0.186604313219809
+maxw1delay_div_maxw2delay is missing : -0.003201182717142572
+
+
+	Class 8 (class=VIII)
+
+Decision Stump
+
+Classifications
+
+minw3iat_div_maxw1iat <= 0.9710084999999999 : 0.5579296520343533
+minw3iat_div_maxw1iat > 0.9710084999999999 : -0.258047600220688
+minw3iat_div_maxw1iat is missing : 0.0020430488113945162
+
+
+	Class 9 (class=IX)
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_maxw2delay <= 1.0082985 : 0.13300645930634422
+maxw3delay_div_maxw2delay > 1.0082985 : -0.4537380773177477
+maxw3delay_div_maxw2delay is missing : 0.0071996164161522895
+
+
+	Class 10 (class=X)
+
+Decision Stump
+
+Classifications
+
+maxw1iat_div_maxw2iat <= 1.0674245 : -0.19939048980293933
+maxw1iat_div_maxw2iat > 1.0674245 : 0.6393391768588491
+maxw1iat_div_maxw2iat is missing : -0.0025792880662971114
+
+
+	Class 11 (class=XI)
+
+Decision Stump
+
+Classifications
+
+maxw1iat_div_avgw2iat <= 6.561919 : 0.6111396615667526
+maxw1iat_div_avgw2iat > 6.561919 : -0.17557652207306423
+maxw1iat_div_avgw2iat is missing : 0.058051332546757074
+
+
+	Class 12 (class=XII)
+
+Decision Stump
+
+Classifications
+
+maxw3iat_div_maxw2iat <= 1.0289915 : 0.14620972461559362
+maxw3iat_div_maxw2iat > 1.0289915 : -0.650749777469429
+maxw3iat_div_maxw2iat is missing : 0.01947315485365882
+
+
+	Class 13 (class=XIII)
+
+Decision Stump
+
+Classifications
+
+minw3delay_div_avgw1delay <= 1.1903895 : 0.24518271349071766
+minw3delay_div_avgw1delay > 1.1903895 : -0.3135159389725837
+minw3delay_div_avgw1delay is missing : 0.022193934162719132
+
+
+	Class 14 (class=XIV)
+
+Decision Stump
+
+Classifications
+
+minw3delay_div_maxw2delay <= 0.8506994999999999 : -0.4498074161553567
+minw3delay_div_maxw2delay > 0.8506994999999999 : 0.31290473252524464
+minw3delay_div_maxw2delay is missing : -0.010450093752686298
+
+
+	Class 15 (class=XV)
+
+Decision Stump
+
+Classifications
+
+avgw3delay_div_maxw2delay <= 0.6181035 : -0.42569105274379615
+avgw3delay_div_maxw2delay > 0.6181035 : 0.4554392492827964
+avgw3delay_div_maxw2delay is missing : -0.0021966396307582983
+
+
+Iteration 5
+	Class 1 (class=I)
+
+Decision Stump
+
+Classifications
+
+avgw3iat_div_avgw1iat <= 1.0134305000000001 : 0.35729102427949644
+avgw3iat_div_avgw1iat > 1.0134305000000001 : -1.1245195713227978
+avgw3iat_div_avgw1iat is missing : -0.05844079642812188
+
+
+	Class 2 (class=II)
+
+Decision Stump
+
+Classifications
+
+minw3iat_div_avgw1iat <= 12.2145605 : -0.8170565742557432
+minw3iat_div_avgw1iat > 12.2145605 : 0.30388382760426413
+minw3iat_div_avgw1iat is missing : -0.029028280401742906
+
+
+	Class 3 (class=III)
+
+Decision Stump
+
+Classifications
+
+maxw1delay_div_minw2delay <= 1.051635 : 0.9426945185038639
+maxw1delay_div_minw2delay > 1.051635 : -0.23432115912909912
+maxw1delay_div_minw2delay is missing : 0.06532092910493047
+
+
+	Class 4 (class=IV)
+
+Decision Stump
+
+Classifications
+
+maxw1delay_div_maxw2delay <= 0.943605 : 0.66100192684785
+maxw1delay_div_maxw2delay > 0.943605 : -0.27232432100023735
+maxw1delay_div_maxw2delay is missing : 0.008447566310383818
+
+
+	Class 5 (class=V)
+
+Decision Stump
+
+Classifications
+
+maxw1delay_div_maxw2delay <= 1.0248965 : -0.2088357755554846
+maxw1delay_div_maxw2delay > 1.0248965 : 0.8131313009954817
+maxw1delay_div_maxw2delay is missing : -0.009158384460518122
+
+
+	Class 6 (class=VI)
+
+Decision Stump
+
+Classifications
+
+avgw3iat_div_maxw1iat <= 0.0849115 : 0.22506512723189848
+avgw3iat_div_maxw1iat > 0.0849115 : -0.2557597327976373
+avgw3iat_div_maxw1iat is missing : -0.020622878443781436
+
+
+	Class 7 (class=VII)
+
+Decision Stump
+
+Classifications
+
+avgw3iat_div_maxw1iat <= 0.12078900000000001 : 0.12407421748491465
+avgw3iat_div_maxw1iat > 0.12078900000000001 : -0.46756792079041143
+avgw3iat_div_maxw1iat is missing : -0.033301636128089625
+
+
+	Class 8 (class=VIII)
+
+Decision Stump
+
+Classifications
+
+maxw3iat_div_maxw2iat <= 1.0971674999999999 : -0.1885056051046534
+maxw3iat_div_maxw2iat > 1.0971674999999999 : 0.6161081694488562
+maxw3iat_div_maxw2iat is missing : 0.002742585781869836
+
+
+	Class 9 (class=IX)
+
+Decision Stump
+
+Classifications
+
+avgw1iat_div_maxw2iat <= 0.0802175 : -0.3737139713937066
+avgw1iat_div_maxw2iat > 0.0802175 : 0.11489956518241126
+avgw1iat_div_maxw2iat is missing : -0.009645268554646622
+
+
+	Class 10 (class=X)
+
+Decision Stump
+
+Classifications
+
+maxw1iat_div_maxw2iat <= 0.9636245 : 0.48238713119950505
+maxw1iat_div_maxw2iat > 0.9636245 : -0.2452499679472992
+maxw1iat_div_maxw2iat is missing : -0.015912680518489476
+
+
+	Class 11 (class=XI)
+
+Decision Stump
+
+Classifications
+
+minw3iat_div_maxw1iat <= 1.0289915 : 0.15356594801313445
+minw3iat_div_maxw1iat > 1.0289915 : -0.6583791011412765
+minw3iat_div_maxw1iat is missing : 0.012339247759953759
+
+
+	Class 12 (class=XII)
+
+Decision Stump
+
+Classifications
+
+maxw1delay_div_minw2delay <= 3.0615854999999996 : 0.02238488087169949
+maxw1delay_div_minw2delay > 3.0615854999999996 : 1.5924173511250774
+maxw1delay_div_minw2delay is missing : 0.07686838599939552
+
+
+	Class 13 (class=XIII)
+
+Decision Stump
+
+Classifications
+
+avgw1iat_div_maxw2iat <= 0.0292225 : 1.573340632467011
+avgw1iat_div_maxw2iat > 0.0292225 : -0.04416285180864238
+avgw1iat_div_maxw2iat is missing : 0.0075943799932009825
+
+
+	Class 14 (class=XIV)
+
+Decision Stump
+
+Classifications
+
+avgw3delay_div_maxw2delay <= 0.7264555 : 0.14729517432377556
+avgw3delay_div_maxw2delay > 0.7264555 : -0.7142392806580503
+avgw3delay_div_maxw2delay is missing : -0.0013591171794166102
+
+
+	Class 15 (class=XV)
+
+Decision Stump
+
+Classifications
+
+maxw1delay_div_minw2delay <= 1.6934405 : 0.2384645870706121
+maxw1delay_div_minw2delay > 1.6934405 : -0.4504861215297541
+maxw1delay_div_minw2delay is missing : -0.005005272772552418
+
+
+Iteration 6
+	Class 1 (class=I)
+
+Decision Stump
+
+Classifications
+
+avgw3iat_div_avgw1iat <= 0.9867440000000001 : -1.0780595938583384
+avgw3iat_div_avgw1iat > 0.9867440000000001 : 0.3329324439756719
+avgw3iat_div_avgw1iat is missing : -0.13999769545533128
+
+
+	Class 2 (class=II)
+
+Decision Stump
+
+Classifications
+
+avgw3iat_div_avgw1iat <= 1.071676 : 0.36281547069149805
+avgw3iat_div_avgw1iat > 1.071676 : -1.0074386778640678
+avgw3iat_div_avgw1iat is missing : 0.04434073359262279
+
+
+	Class 3 (class=III)
+
+Decision Stump
+
+Classifications
+
+avgw3iat_div_maxw1iat <= 0.11160500000000001 : 0.23843978476402553
+avgw3iat_div_maxw1iat > 0.11160500000000001 : -0.819867494614264
+avgw3iat_div_maxw1iat is missing : 0.0441524228655106
+
+
+	Class 4 (class=IV)
+
+Decision Stump
+
+Classifications
+
+avgw3delay_div_minw1delay <= 1.1280115 : 0.68267929030402
+avgw3delay_div_minw1delay > 1.1280115 : -0.20822971696867815
+avgw3delay_div_minw1delay is missing : 0.043089530956969865
+
+
+	Class 5 (class=V)
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_maxw2delay <= 0.9836735 : 0.6890528564489697
+maxw3delay_div_maxw2delay > 0.9836735 : -0.18382431624349574
+maxw3delay_div_maxw2delay is missing : 0.013078017998930236
+
+
+	Class 6 (class=VI)
+
+Decision Stump
+
+Classifications
+
+avgw1delay_div_avgw2delay <= 0.8749965 : 0.6674995956067318
+avgw1delay_div_avgw2delay > 0.8749965 : -0.0868347490351048
+avgw1delay_div_avgw2delay is missing : -0.0044287769259774646
+
+
+	Class 7 (class=VII)
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_minw2delay <= 1.9512165000000001 : -0.11843782709142177
+maxw3delay_div_minw2delay > 1.9512165000000001 : 0.4796436174276283
+maxw3delay_div_minw2delay is missing : -0.019633890912526375
+
+
+	Class 8 (class=VIII)
+
+Decision Stump
+
+Classifications
+
+minw3delay_div_maxw3delay <= 0.6859985 : 0.2153491058169718
+minw3delay_div_maxw3delay > 0.6859985 : -0.6233053112811324
+minw3delay_div_maxw3delay is missing : -0.009361714589662487
+
+
+	Class 9 (class=IX)
+
+Decision Stump
+
+Classifications
+
+minw3iat_div_avgw1iat <= 29.5068895 : -0.062932845621125
+minw3iat_div_avgw1iat > 29.5068895 : 1.1056717240544849
+minw3iat_div_avgw1iat is missing : -0.02330330220419756
+
+
+	Class 10 (class=X)
+
+Decision Stump
+
+Classifications
+
+avgw3iat_div_avgw1iat <= 0.8993495 : 0.5336889805450769
+avgw3iat_div_avgw1iat > 0.8993495 : -0.2578984412473494
+avgw3iat_div_avgw1iat is missing : 0.0016296375533212065
+
+
+	Class 11 (class=XI)
+
+Decision Stump
+
+Classifications
+
+maxw3iat_div_maxw2iat <= 0.9718255 : -0.6835149206439982
+maxw3iat_div_maxw2iat > 0.9718255 : 0.09607791205796264
+maxw3iat_div_maxw2iat is missing : -0.017689444960974177
+
+
+	Class 12 (class=XII)
+
+Decision Stump
+
+Classifications
+
+minw3iat_div_maxw1iat <= 0.9718255 : -0.6451200128481765
+minw3iat_div_maxw1iat > 0.9718255 : 0.16294030495944398
+minw3iat_div_maxw1iat is missing : 0.03983142602189408
+
+
+	Class 13 (class=XIII)
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_minw2delay <= 1.879049 : 0.1184130678751353
+maxw3delay_div_minw2delay > 1.879049 : -0.6024271540349829
+maxw3delay_div_minw2delay is missing : 0.013998437855037831
+
+
+	Class 14 (class=XIV)
+
+Decision Stump
+
+Classifications
+
+maxw1iat_div_avgw2iat <= 29.601786 : -0.07502062437905296
+maxw1iat_div_avgw2iat > 29.601786 : 1.693231582528523
+maxw1iat_div_avgw2iat is missing : -0.016648864021596675
+
+
+	Class 15 (class=XV)
+
+Decision Stump
+
+Classifications
+
+maxw1delay_div_maxw2delay <= 1.0145460000000002 : -0.19965504700599357
+maxw1delay_div_maxw2delay > 1.0145460000000002 : 0.677565195127049
+maxw1delay_div_maxw2delay is missing : -0.012685310763764519
+
+
+Iteration 7
+	Class 1 (class=I)
+
+Decision Stump
+
+Classifications
+
+minw3delay_div_avgw2delay <= 1.0507065 : 0.2410843525181255
+minw3delay_div_avgw2delay > 1.0507065 : -1.1234806542964748
+minw3delay_div_avgw2delay is missing : -0.10472515977696951
+
+
+	Class 2 (class=II)
+
+Decision Stump
+
+Classifications
+
+avgw3iat_div_avgw1iat <= 0.9336085000000001 : -1.0223786104588115
+avgw3iat_div_avgw1iat > 0.9336085000000001 : 0.31751725037839484
+avgw3iat_div_avgw1iat is missing : 0.01541531648985973
+
+
+	Class 3 (class=III)
+
+Decision Stump
+
+Classifications
+
+minw3delay_div_minw1delay <= 0.973543 : 1.279434664876239
+minw3delay_div_minw1delay > 0.973543 : -0.14495385708250624
+minw3delay_div_minw1delay is missing : 0.01753584581179206
+
+
+	Class 4 (class=IV)
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_maxw2delay <= 1.0334729999999999 : -0.2955819723673456
+maxw3delay_div_maxw2delay > 1.0334729999999999 : 0.6008175790414806
+maxw3delay_div_maxw2delay is missing : 0.025191042714971405
+
+
+	Class 5 (class=V)
+
+Decision Stump
+
+Classifications
+
+minw3iat_div_avgw1iat <= 18.7181925 : 0.19390587553852356
+minw3iat_div_avgw1iat > 18.7181925 : -0.7380067403936862
+minw3iat_div_avgw1iat is missing : 0.020707686293436996
+
+
+	Class 6 (class=VI)
+
+Decision Stump
+
+Classifications
+
+maxw1delay_div_maxw2delay <= 0.9963770000000001 : -0.25992587545617196
+maxw1delay_div_maxw2delay > 0.9963770000000001 : 0.17307711391583924
+maxw1delay_div_maxw2delay is missing : 0.006970669608274499
+
+
+	Class 7 (class=VII)
+
+Decision Stump
+
+Classifications
+
+minw3delay_div_minw2delay <= 1.2950054999999998 : 0.31983014733978543
+minw3delay_div_minw2delay > 1.2950054999999998 : -0.16560284337647746
+minw3delay_div_minw2delay is missing : -0.013446497982782142
+
+
+	Class 8 (class=VIII)
+
+Decision Stump
+
+Classifications
+
+maxw1iat_div_maxw2iat <= 0.927922 : 0.4653352884798607
+maxw1iat_div_maxw2iat > 0.927922 : -0.19827713857353294
+maxw1iat_div_maxw2iat is missing : -0.01919739244191824
+
+
+	Class 9 (class=IX)
+
+Decision Stump
+
+Classifications
+
+maxw3iat_div_maxw2iat <= 1.059715 : 0.08767167014980028
+maxw3iat_div_maxw2iat > 1.059715 : -0.4537338175206004
+maxw3iat_div_maxw2iat is missing : 3.929880816028343E-4
+
+
+	Class 10 (class=X)
+
+Decision Stump
+
+Classifications
+
+minw3iat_div_avgw2iat <= 1.356713 : -0.12630295657049898
+minw3iat_div_avgw2iat > 1.356713 : 0.9401097386325454
+minw3iat_div_avgw2iat is missing : -0.010590293564536859
+
+
+	Class 11 (class=XI)
+
+Decision Stump
+
+Classifications
+
+minw3iat_div_avgw1iat <= 26.985317000000002 : -0.04741981249627186
+minw3iat_div_avgw1iat > 26.985317000000002 : 1.3118034071254354
+minw3iat_div_avgw1iat is missing : 0.006994230254014525
+
+
+	Class 12 (class=XII)
+
+Decision Stump
+
+Classifications
+
+minw3iat_div_avgw1iat <= 21.580516 : -0.05843345510934361
+minw3iat_div_avgw1iat > 21.580516 : 1.161641230140933
+minw3iat_div_avgw1iat is missing : 0.010247317208867639
+
+
+	Class 13 (class=XIII)
+
+Decision Stump
+
+Classifications
+
+avgw3iat_div_avgw1iat <= 0.5124839999999999 : 1.0845183189940402
+avgw3iat_div_avgw1iat > 0.5124839999999999 : -0.05205469115482148
+avgw3iat_div_avgw1iat is missing : -0.0023781129721472073
+
+
+	Class 14 (class=XIV)
+
+Decision Stump
+
+Classifications
+
+avgw1delay_div_maxw2delay <= 0.857819 : -0.31211375581220113
+avgw1delay_div_maxw2delay > 0.857819 : 0.3427765287137008
+avgw1delay_div_maxw2delay is missing : 0.006803213631494131
+
+
+	Class 15 (class=XV)
+
+Decision Stump
+
+Classifications
+
+minw3delay_div_maxw1delay <= 1.0225995 : -0.17933173318973886
+minw3delay_div_maxw1delay > 1.0225995 : 0.721016137100048
+minw3delay_div_maxw1delay is missing : -0.01532267016230845
+
+
+Iteration 8
+	Class 1 (class=I)
+
+Decision Stump
+
+Classifications
+
+minw3iat_div_avgw2iat <= 1.0134765 : 0.3007189301523169
+minw3iat_div_avgw2iat > 1.0134765 : -0.9819851905005231
+minw3iat_div_avgw2iat is missing : 0.0074146528657394305
+
+
+	Class 2 (class=II)
+
+Decision Stump
+
+Classifications
+
+minw3delay_div_maxw1delay <= 0.6118195 : 1.4319557789682096
+minw3delay_div_maxw1delay > 0.6118195 : -0.23155361894714382
+minw3delay_div_maxw1delay is missing : -0.004744065307793255
+
+
+	Class 3 (class=III)
+
+Decision Stump
+
+Classifications
+
+minw3delay_div_maxw2delay <= 1.042941 : -0.1590928717118289
+minw3delay_div_maxw2delay > 1.042941 : 0.8895940314600833
+minw3delay_div_maxw2delay is missing : 0.051556194946554494
+
+
+	Class 4 (class=IV)
+
+Decision Stump
+
+Classifications
+
+stdw3iat_div_stdw2iat <= 1.275229 : 0.14688930255921248
+stdw3iat_div_stdw2iat > 1.275229 : -0.954181157179662
+stdw3iat_div_stdw2iat is missing : 0.02036621028261946
+
+
+	Class 5 (class=V)
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_avgw2delay <= 1.4075485 : -0.09505222576488698
+maxw3delay_div_avgw2delay > 1.4075485 : 1.069417555817124
+maxw3delay_div_avgw2delay is missing : -0.0012692472934162033
+
+
+	Class 6 (class=VI)
+
+Decision Stump
+
+Classifications
+
+minw3iat_div_avgw1iat <= 11.09028 : -0.24346793221027904
+minw3iat_div_avgw1iat > 11.09028 : 0.18756449772737926
+minw3iat_div_avgw1iat is missing : 0.004147028007918836
+
+
+	Class 7 (class=VII)
+
+Decision Stump
+
+Classifications
+
+maxw3iat_div_avgw2iat <= 7.8545315 : -0.4685313517079559
+maxw3iat_div_avgw2iat > 7.8545315 : 0.10244168444860466
+maxw3iat_div_avgw2iat is missing : -5.311051892815767E-4
+
+
+	Class 8 (class=VIII)
+
+Decision Stump
+
+Classifications
+
+maxw1iat_div_maxw2iat <= 1.039231 : -0.21031377767159704
+maxw1iat_div_maxw2iat > 1.039231 : 0.4826047572348863
+maxw1iat_div_maxw2iat is missing : -0.004669226687871435
+
+
+	Class 9 (class=IX)
+
+Decision Stump
+
+Classifications
+
+minw1delay_div_minw2delay <= 0.842349 : 0.48962927715216686
+minw1delay_div_minw2delay > 0.842349 : -0.1056004142189991
+minw1delay_div_minw2delay is missing : -0.017493867551929346
+
+
+	Class 10 (class=X)
+
+Decision Stump
+
+Classifications
+
+stdw3delay_div_stdw1delay <= 1.379673 : 0.14195475175446765
+stdw3delay_div_stdw1delay > 1.379673 : -0.5448349623492958
+stdw3delay_div_stdw1delay is missing : -0.002434708556566034
+
+
+	Class 11 (class=XI)
+
+Decision Stump
+
+Classifications
+
+avgw3iat_div_avgw1iat <= 0.589771 : 1.0858724222623746
+avgw3iat_div_avgw1iat > 0.589771 : -0.07156047321807635
+avgw3iat_div_avgw1iat is missing : 0.0011144791790189902
+
+
+	Class 12 (class=XII)
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_maxw1delay <= 0.32616 : 1.5319698994867916
+maxw3delay_div_maxw1delay > 0.32616 : -0.04759038110376832
+maxw3delay_div_maxw1delay is missing : 0.005019911107831529
+
+
+	Class 13 (class=XIII)
+
+Decision Stump
+
+Classifications
+
+maxw3iat_div_avgw2iat <= 34.3556675 : -0.0459148237810374
+maxw3iat_div_avgw2iat > 34.3556675 : 1.1442908333279416
+maxw3iat_div_avgw2iat is missing : -0.0027671007775754096
+
+
+	Class 14 (class=XIV)
+
+Decision Stump
+
+Classifications
+
+avgw3delay_div_maxw1delay <= 0.8567670000000001 : -0.3140894365544254
+avgw3delay_div_maxw1delay > 0.8567670000000001 : 0.240146713617575
+avgw3delay_div_maxw1delay is missing : -0.023973916773206063
+
+
+	Class 15 (class=XV)
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_maxw2delay <= 0.985663 : 0.6856969534001206
+maxw3delay_div_maxw2delay > 0.985663 : -0.19702050574225607
+maxw3delay_div_maxw2delay is missing : -0.00868510965592716
+
+
+Iteration 9
+	Class 1 (class=I)
+
+Decision Stump
+
+Classifications
+
+minw3iat_div_avgw2iat <= 0.9867085 : -0.9656122169280908
+minw3iat_div_avgw2iat > 0.9867085 : 0.26743773485303163
+minw3iat_div_avgw2iat is missing : -0.05628799563460149
+
+
+	Class 2 (class=II)
+
+Decision Stump
+
+Classifications
+
+avgw3iat_div_maxw1iat <= 0.046240500000000004 : 0.916397678447834
+avgw3iat_div_maxw1iat > 0.046240500000000004 : -0.26050147611349866
+avgw3iat_div_maxw1iat is missing : 0.02405844284953013
+
+
+	Class 3 (class=III)
+
+Decision Stump
+
+Classifications
+
+minw1delay_div_maxw2delay <= 0.7765335 : -0.22091448959402282
+minw1delay_div_maxw2delay > 0.7765335 : 0.5259412713806881
+minw1delay_div_maxw2delay is missing : 0.04314737667620434
+
+
+	Class 4 (class=IV)
+
+Decision Stump
+
+Classifications
+
+minw3delay_div_minw1delay <= 1.1479374999999998 : 0.6939018461885361
+minw3delay_div_minw1delay > 1.1479374999999998 : -0.07776077490500803
+minw3delay_div_minw1delay is missing : 0.047521454918229365
+
+
+	Class 5 (class=V)
+
+Decision Stump
+
+Classifications
+
+stdw3delay_div_stdw2delay <= 1.3460945 : -0.14481675010472866
+stdw3delay_div_stdw2delay > 1.3460945 : 0.513025954245289
+stdw3delay_div_stdw2delay is missing : 0.03196667370835354
+
+
+	Class 6 (class=VI)
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_avgw2delay <= 1.2789679999999999 : -0.09678112735860968
+maxw3delay_div_avgw2delay > 1.2789679999999999 : 0.40646823399608406
+maxw3delay_div_avgw2delay is missing : 0.0052915682471079695
+
+
+	Class 7 (class=VII)
+
+Decision Stump
+
+Classifications
+
+avgw1iat_div_maxw2iat <= 0.070264 : -0.35269425510790164
+avgw1iat_div_maxw2iat > 0.070264 : 0.11221065319408534
+avgw1iat_div_maxw2iat is missing : -0.0035967537342344864
+
+
+	Class 8 (class=VIII)
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_maxw1delay <= 0.4462175 : -0.8572249721521253
+maxw3delay_div_maxw1delay > 0.4462175 : 0.09790090263400912
+maxw3delay_div_maxw1delay is missing : 0.0030756235767284874
+
+
+	Class 9 (class=IX)
+
+Decision Stump
+
+Classifications
+
+avgw3iat_div_maxw1iat <= 0.128577 : 0.10049098393487148
+avgw3iat_div_maxw1iat > 0.128577 : -0.2938266763440494
+avgw3iat_div_maxw1iat is missing : -0.013880567721343521
+
+
+	Class 10 (class=X)
+
+Decision Stump
+
+Classifications
+
+minw3iat_div_maxw1iat <= 0.9626135 : 0.4158903140731442
+minw3iat_div_maxw1iat > 0.9626135 : -0.2401332271820733
+minw3iat_div_maxw1iat is missing : -0.004392318528286364
+
+
+	Class 11 (class=XI)
+
+Decision Stump
+
+Classifications
+
+minw3delay_div_minw1delay <= 1.530738 : -0.44076921821701254
+minw3delay_div_minw1delay > 1.530738 : 0.10226302794369617
+minw3delay_div_minw1delay is missing : -0.025314073318867703
+
+
+	Class 12 (class=XII)
+
+Decision Stump
+
+Classifications
+
+minw1delay_div_maxw2delay <= 0.3643785 : 1.362410111779777
+minw1delay_div_maxw2delay > 0.3643785 : -0.06306189114955031
+minw1delay_div_maxw2delay is missing : -0.008484614501877895
+
+
+	Class 13 (class=XIII)
+
+Decision Stump
+
+Classifications
+
+maxw1delay_div_maxw2delay <= 0.9621925 : -0.5929371336709157
+maxw1delay_div_maxw2delay > 0.9621925 : 0.07122605866258162
+maxw1delay_div_maxw2delay is missing : -0.0033831357943267574
+
+
+	Class 14 (class=XIV)
+
+Decision Stump
+
+Classifications
+
+avgw3delay_div_maxw2delay <= 0.33609999999999995 : 1.9485060784612287
+avgw3delay_div_maxw2delay > 0.33609999999999995 : -0.08477917602902854
+avgw3delay_div_maxw2delay is missing : -0.03619248024156579
+
+
+	Class 15 (class=XV)
+
+Decision Stump
+
+Classifications
+
+maxw3iat_div_avgw2iat <= 9.001028999999999 : 0.32548755106957317
+maxw3iat_div_avgw2iat > 9.001028999999999 : -0.3202097808754265
+maxw3iat_div_avgw2iat is missing : -0.012952288614175318
+
+
+Iteration 10
+	Class 1 (class=I)
+
+Decision Stump
+
+Classifications
+
+avgw1delay_div_avgw2delay <= 0.9553085 : -0.8495751689343538
+avgw1delay_div_avgw2delay > 0.9553085 : 0.30531263250001994
+avgw1delay_div_avgw2delay is missing : -0.031850906721269716
+
+
+	Class 2 (class=II)
+
+Decision Stump
+
+Classifications
+
+minw3delay_div_maxw2delay <= 0.9858275000000001 : -0.31741996083971585
+minw3delay_div_maxw2delay > 0.9858275000000001 : 0.49323608670122077
+minw3delay_div_maxw2delay is missing : 0.05336787640414239
+
+
+	Class 3 (class=III)
+
+Decision Stump
+
+Classifications
+
+maxw3iat_div_avgw2iat <= 26.004841499999998 : 0.11833238483750474
+maxw3iat_div_avgw2iat > 26.004841499999998 : -1.1013953222955113
+maxw3iat_div_avgw2iat is missing : 0.018809122009868055
+
+
+	Class 4 (class=IV)
+
+Decision Stump
+
+Classifications
+
+stdw3delay_div_stdw1delay <= 0.17864400000000002 : -1.1012490104837718
+stdw3delay_div_stdw1delay > 0.17864400000000002 : 0.0658529246264524
+stdw3delay_div_stdw1delay is missing : -0.008418386124073834
+
+
+	Class 5 (class=V)
+
+Decision Stump
+
+Classifications
+
+minw3delay_div_minw1delay <= 1.378583 : 0.5464557722096576
+minw3delay_div_minw1delay > 1.378583 : -0.1601111075338146
+minw3delay_div_minw1delay is missing : 5.306156387418156E-4
+
+
+	Class 6 (class=VI)
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_maxw2delay <= 1.0036494999999999 : 0.19751743673658084
+maxw3delay_div_maxw2delay > 1.0036494999999999 : -0.3016050593319401
+maxw3delay_div_maxw2delay is missing : -0.0017714604331744229
+
+
+	Class 7 (class=VII)
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_maxw1delay <= 0.6399954999999999 : -0.12492718140902107
+maxw3delay_div_maxw1delay > 0.6399954999999999 : 0.2972720618293346
+maxw3delay_div_maxw1delay is missing : 0.0014861912219089903
+
+
+	Class 8 (class=VIII)
+
+Decision Stump
+
+Classifications
+
+maxw3iat_div_maxw2iat <= 0.9710084999999999 : 0.5042613271165167
+maxw3iat_div_maxw2iat > 0.9710084999999999 : -0.21282483648877268
+maxw3iat_div_maxw2iat is missing : 0.006484899742034201
+
+
+	Class 9 (class=IX)
+
+Decision Stump
+
+Classifications
+
+minw3iat_div_maxw1iat <= 0.9929574999999999 : -0.2934402416524984
+minw3iat_div_maxw1iat > 0.9929574999999999 : 0.12087203062207864
+minw3iat_div_maxw1iat is missing : 0.0035185791055248514
+
+
+	Class 10 (class=X)
+
+Decision Stump
+
+Classifications
+
+maxw3iat_div_maxw2iat <= 1.0377494999999999 : -0.24964994319406972
+maxw3iat_div_maxw2iat > 1.0377494999999999 : 0.5417129655899157
+maxw3iat_div_maxw2iat is missing : -0.0025188228323464244
+
+
+	Class 11 (class=XI)
+
+Decision Stump
+
+Classifications
+
+avgw3iat_div_avgw1iat <= 1.897126 : -0.0650611591520269
+avgw3iat_div_avgw1iat > 1.897126 : 0.8858025841821122
+avgw3iat_div_avgw1iat is missing : -0.02152286822388269
+
+
+	Class 12 (class=XII)
+
+Decision Stump
+
+Classifications
+
+minw3iat_div_maxw1iat <= 1.0289915 : 0.13451186640472973
+minw3iat_div_maxw1iat > 1.0289915 : -0.6051121940956284
+minw3iat_div_maxw1iat is missing : 0.014715373123182038
+
+
+	Class 13 (class=XIII)
+
+Decision Stump
+
+Classifications
+
+maxw3iat_div_maxw2iat <= 1.0289915 : 0.0786365763253258
+maxw3iat_div_maxw2iat > 1.0289915 : -0.38704129384146707
+maxw3iat_div_maxw2iat is missing : -0.004375948655792949
+
+
+	Class 14 (class=XIV)
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_avgw2delay <= 1.1553335 : 0.3489587403763079
+maxw3delay_div_avgw2delay > 1.1553335 : -0.2055532289286026
+maxw3delay_div_avgw2delay is missing : 0.012661552015081236
+
+
+	Class 15 (class=XV)
+
+Decision Stump
+
+Classifications
+
+minw3iat_div_avgw1iat <= 22.4148665 : -0.11426865170797501
+minw3iat_div_avgw1iat > 22.4148665 : 0.886451325442325
+minw3iat_div_avgw1iat is missing : -0.028394746577589586
+
+Number of performed iterations: 10
+
+
+Time taken to build model: 217.3 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       30101               47.7794 %
+Incorrectly Classified Instances     32899               52.2206 %
+Kappa statistic                          0.4405
+Mean absolute error                      0.0916
+Root mean squared error                  0.2094
+Relative absolute error                 73.5735 %
+Root relative squared error             83.9388 %
+Total Number of Instances            63000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.947    0.010    0.874      0.947    0.909      0.903    0.998     0.979     I
+                 0.813    0.018    0.758      0.813    0.785      0.770    0.984     0.897     II
+                 0.657    0.035    0.573      0.657    0.612      0.584    0.954     0.624     III
+                 0.481    0.042    0.453      0.481    0.467      0.427    0.921     0.448     IV
+                 0.384    0.042    0.391      0.384    0.387      0.344    0.888     0.351     V
+                 0.303    0.043    0.337      0.303    0.319      0.273    0.845     0.294     VI
+                 0.386    0.048    0.367      0.386    0.376      0.329    0.854     0.370     VII
+                 0.426    0.054    0.360      0.426    0.390      0.344    0.906     0.362     VIII
+                 0.310    0.033    0.399      0.310    0.349      0.311    0.853     0.315     IX
+                 0.442    0.045    0.413      0.442    0.427      0.385    0.910     0.438     X
+                 0.355    0.037    0.406      0.355    0.379      0.338    0.874     0.360     XI
+                 0.475    0.042    0.449      0.475    0.462      0.423    0.920     0.473     XII
+                 0.221    0.031    0.330      0.221    0.265      0.229    0.840     0.268     XIII
+                 0.526    0.045    0.455      0.526    0.488      0.450    0.879     0.464     XIV
+                 0.444    0.033    0.487      0.444    0.464      0.429    0.877     0.497     XV
+Weighted Avg.    0.478    0.037    0.470      0.478    0.472      0.436    0.900     0.476     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g    h    i    j    k    l    m    n    o   <-- classified as
+ 3961   56   16    5    4    0    8   23    0    6    3   18    0   23   60 |    a = I
+   64 3375  487   71   46   13    3   17    0    6    9   12    4   28   15 |    b = II
+   17  337 2780  821  131   14    5   43    1   15    6   17    7   16   24 |    c = III
+   35  134 1013 2037  671   96   27   54    9   61    5   24    7   16   46 |    d = IV
+   51   51  176  847 1600  506  213  246   29  288    6   30   34   30   65 |    e = V
+   23   93   65  159  698 1279  607  350  274  278   34   41   72   64  191 |    f = VI
+   58   56   14   60  293  613 1645  300  410  299   33   63  122  108  192 |    g = VII
+   26   32   65   81   95  255  415 1771  107 1064   75   31   50   42   53 |    h = VIII
+   16   42   24   35  131  310  739  258 1293  227  199  162  300  244  192 |    i = IX
+   30   46   82   93  102  123  199 1264   85 1861   64   60   74   52   76 |    j = X
+   73   34   28   75   37   55  139   98  281   79 1504  972  302  345  216 |    k = XI
+   28   46   30   30   94   66  113   88   90   51  962 1999  171  164  274 |    l = XII
+   58   60   26   67   52  178  109  136  393   85  383  308  912  962  395 |    m = XIII
+   82   48   16   50   59  131  133   73  162   61  182  380  465 2224  163 |    n = XIV
+    9   40   27   65   84  159  133  203  110  125  239  331  240  565 1860 |    o = XV
+
