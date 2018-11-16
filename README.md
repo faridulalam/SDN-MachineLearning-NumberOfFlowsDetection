@@ -1,7 +1,7 @@
 # SDN-MachineLearning-NumberOfFlowsDetection
 
 
-..........MasterThesis on Number of Flows Detection in SDN networks using Machine Learning.........
+..........Master Thesis on Number of Flows Detection in SDN networks using Machine Learning.........
 ----------------------------------------------------------------------------------------------------
 
 ABSTRACT
@@ -28,7 +28,7 @@ control plane) and network devices turns into simple packet forwarding devices (
 plane) that can be programmed globally on each hardware unit via an open interface (e.g.
 OpenFlow).
 
-This thesis report provides a mechanism to detect the number of flows into the network,
+This work provides a mechanism to detect the number of flows into the network,
 which will be used later for taking swift actions to avoid congestion or reroute the flow in
 the network. Machine Learning (ML) has been used to build a multiple flows detection
 classifier by using the programmability feature of SDN. The combination of ML and SDN
